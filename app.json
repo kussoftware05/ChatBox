@@ -1,21 +1,24 @@
 {
   "expo": {
-    "name": "NJDV-commincations",
-    "slug": "NJDV-commincations",
+    "name": "NJDVCommincations",
+    "slug": "NJDVCommincations",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "NJDVCommincations",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kus05.NJDVcommincations"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "runtimeVersion": "1.0.0",
+      "package": "com.kus05.NJDVcommincations"
     },
     "web": {
       "bundler": "metro",
@@ -27,15 +30,29 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/Logo-splash.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "black"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "275afd52-22ec-438b-a60c-b7cde1d64291"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d5580951-bbee-4180-a9ef-dd415e90e223"
     }
   }
 }
